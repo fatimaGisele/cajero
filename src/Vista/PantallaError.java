@@ -73,7 +73,7 @@ public class PantallaError extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Pantalla1 p1 = new Pantalla1();
+        PantallaCuenta p1 = new PantallaCuenta();
         p1.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed

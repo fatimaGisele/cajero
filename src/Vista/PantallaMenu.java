@@ -15,20 +15,19 @@ import modelo.Cajero;
  *
  * @author Usuario
  */
-public class Pantalla2 extends javax.swing.JFrame {
+public class PantallaMenu extends javax.swing.JFrame {
 
     /**
-     * Creates new form Pantalla2
+     * Creates new form PantallaMenu
      */
-    Cajero cj;
-    double saldo;
-    int montoCajero;
+    private double saldo;
+    private int montoCajero;
     
-    public Pantalla2(){
+    public PantallaMenu(){
         
     }
     
-    public Pantalla2(double saldo) {
+    public PantallaMenu(double saldo) {
         this.saldo = saldo;
         initComponents();
         setLocationRelativeTo(null);
@@ -128,7 +127,7 @@ public class Pantalla2 extends javax.swing.JFrame {
     
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        Pantalla1 p = new Pantalla1();
+        PantallaCuenta p = new PantallaCuenta();
         p.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -168,21 +167,22 @@ public class Pantalla2 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Pantalla2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PantallaMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Pantalla2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PantallaMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Pantalla2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PantallaMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Pantalla2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PantallaMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             
             public void run() {
-                new Pantalla2().setVisible(true);
+                new PantallaMenu().setVisible(true);
             }
         });
     }

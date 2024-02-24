@@ -8,9 +8,9 @@ import java.util.*;
 
 public class Cuenta {
     public static int CANT_CARACTER_NIP = 5; 
-    int id;
-    double saldo;
-    int pin;
+    private int id;
+    private double saldo;
+    private int pin;
     
     
     public Cuenta(int id, int pin, double saldo){
@@ -19,7 +19,6 @@ public class Cuenta {
         this.saldo = saldo;
     }
 
-   
     
     public int getId(){
         return this.id;
@@ -34,7 +33,6 @@ public class Cuenta {
     }
 
     public void setSaldo(double saldo) {
-        System.out.println("salde desde cuenta "+saldo);
         this.saldo = saldo;
     }
 

@@ -19,9 +19,9 @@ public class PantallaDeposito extends javax.swing.JFrame {
     /**
      * Creates new form PantallaDeposito
      */
-    Cajero cj= new Cajero();
-    double s;
-    public double monto;
+    private Cajero cj= new Cajero();
+    private double s;
+    private double monto;
     
     public PantallaDeposito() {
         initComponents();
@@ -130,9 +130,7 @@ public class PantallaDeposito extends javax.swing.JFrame {
     public double DepositarEfectivo() {
         if (GetData()> 0) {
             try{
-                System.out.println("monto depositar "+GetData()+" saldo "+s);
                 s = cj.Depositar(GetData(), s);
-                System.out.println("saldo deposito "+s);
                 PantallaData d = new PantallaData();
                 d.Inicio(s);
                 d.setVisible(true);

@@ -13,7 +13,7 @@ import modelo.*;
  * @author Usuario
  */
 public class Controlador {
-    private Pantalla1 p1;
+    private PantallaCuenta p1;
     private Cajero b;
     public double i;
     
@@ -21,7 +21,7 @@ public class Controlador {
         this.b = new Cajero();
     }
     
-    public void Iniciar(Pantalla1 f){
+    public void Iniciar(PantallaCuenta f){
         this.p1 = f;
         f.setVisible(true);
     }

@@ -25,11 +25,11 @@ public class PantallaRetiro extends javax.swing.JFrame {
      * Creates new form PantallaRetiro
      */
     private int monto;
-    Cajero cj = new Cajero();
-    double s;
+    private Cajero cj = new Cajero();
+    private double s;
     private static int ID=0;
     private int idRetiro;
-    int montoCajero;
+    private int montoCajero;
     private static int MONTO_BILLETE = 20;
     
     public PantallaRetiro() {

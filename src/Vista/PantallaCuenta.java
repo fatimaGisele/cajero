@@ -13,13 +13,13 @@ import javax.swing.JOptionPane;
  *
  * @author Usuario
  */
-public class Pantalla1 extends javax.swing.JFrame {
+public class PantallaCuenta extends javax.swing.JFrame {
 
     /**
-     * Creates new form Pantalla1
+     * Creates new form PantallaCuenta
      */
-    Controlador c = new Controlador() ;
-    public Pantalla1() {
+    private Controlador c = new Controlador() ;
+    public PantallaCuenta() {
         initComponents();
         setLocationRelativeTo(null);
     }
@@ -171,20 +171,21 @@ public class Pantalla1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Pantalla1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PantallaCuenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Pantalla1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PantallaCuenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Pantalla1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PantallaCuenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Pantalla1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PantallaCuenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Pantalla1().setVisible(true);
+                new PantallaCuenta().setVisible(true);
             }
         });
     }

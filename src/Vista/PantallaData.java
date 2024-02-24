@@ -14,8 +14,8 @@ public class PantallaData extends javax.swing.JFrame {
     /**
      * Creates new form PantallaData
      */
-    double saldo;
-    int montoCajero;
+    private double saldo;
+    private int montoCajero;
     
     public PantallaData() {
         initComponents();
@@ -79,7 +79,7 @@ public class PantallaData extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
         this.dispose();
-        Pantalla2 p = new Pantalla2(this.saldo);
+        PantallaMenu p = new PantallaMenu(this.saldo);
         p.setMontoCajero(montoCajero);
         p.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed

@@ -5,7 +5,7 @@
  */
 package finalprogavaltamirano;
 import Controlador.Controlador;
-import Vista.Pantalla1;
+import Vista.PantallaCuenta;
 /**
  *
  * @author Usuario
@@ -16,7 +16,7 @@ public class FinalProgAvAltamirano {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Pantalla1 f = new Pantalla1();
+        PantallaCuenta f = new PantallaCuenta();
         Controlador c = new Controlador();
         c.Iniciar(f);
     }

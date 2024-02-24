@@ -10,6 +10,14 @@ package modelo;
  * @author Usuario
  */
 public class Cliente {
-    String nombre;
-    String num_cuenta;
+    private String nombre;
+    private String Apellido;
+    private int numCuenta;
+
+    public Cliente(String nombre, String Apellido, int num_cuenta) {
+        this.nombre = nombre;
+        this.Apellido = Apellido;
+        this.numCuenta = num_cuenta;
+    }
+    
 }

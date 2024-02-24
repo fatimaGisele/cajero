@@ -17,8 +17,9 @@ public class PantallaPin extends javax.swing.JFrame {
     /**
      * Creates new form PantallaPin
      */
-    Controlador c = new Controlador() ;
-    public double saldo;
+    private Controlador c = new Controlador() ;
+    private double saldo;
+    
     public PantallaPin() {
         initComponents();
         setLocationRelativeTo(null);
@@ -105,7 +106,7 @@ public class PantallaPin extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-   public int getNIP(){
+   public int getPIN(){
          int i=0;
          char[] j = this.jPasswordField1.getPassword();
          
@@ -124,8 +125,8 @@ public class PantallaPin extends javax.swing.JFrame {
     }
    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(c.VerificarPin(this.getNIP())>0){
-            Pantalla2 p2 = new Pantalla2(this.saldo); 
+        if(c.VerificarPin(this.getPIN())>0){
+            PantallaMenu p2 = new PantallaMenu(this.saldo); 
             p2.setVisible(true);
             this.dispose();
         }else{
